@@ -1,0 +1,54 @@
+drop database if exists vrtic;
+
+create database 
+    vrtic;
+
+use vrtic;
+
+create table odgojna_skupina(
+sifra int not null primary key auto_increment,
+skupina_1 int not null,
+skupina_2 int not null,
+skupina_3 int not null,
+odgajateljica int not null,
+datum_pocetka date
+);
+
+create table odgajateljica(
+sifra int not null primary key auto_increment,
+ime varchar(20),
+prezime varchar(20),
+strucna_sprema varchar(50)
+);
+
+create table skupina_1(
+sifra int not null primary key auto_increment,
+ime varchar(20),
+prezime varchar(20),
+opis text,
+odgajateljica varchar(20)
+);
+create table skupina_2(
+sifra int not null primary key auto_increment,
+ime varchar(20),
+prezime varchar(20),
+opis text,
+odgajateljica varchar(20)
+);
+create table skupina_3(
+sifra int not null primary key auto_increment,
+ime varchar(20),
+prezime varchar(20),
+opis text,
+odgajateljica varchar(20)
+);
+
+alter table odgojna_skupina add foreign key (odgajateljica) references odgajateljica(sifra);
+
+alter table odgojna_skupina add foreign key (skupina_1) references skupina_1(sifra);
+
+alter table odgojna_skupina add foreign key (skupina_2) references skupina_2(sifra);
+
+alter table odgojna_skupina add foreign key (skupina_3) references skupina_3(sifra);
+
+
