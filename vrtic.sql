@@ -25,22 +25,19 @@ create table skupina_1(
 sifra int not null primary key auto_increment,
 ime varchar(20),
 prezime varchar(20),
-opis text,
-odgajateljica varchar(20)
+opis text
 );
 create table skupina_2(
 sifra int not null primary key auto_increment,
 ime varchar(20),
 prezime varchar(20),
-opis text,
-odgajateljica varchar(20)
+opis text
 );
 create table skupina_3(
 sifra int not null primary key auto_increment,
 ime varchar(20),
 prezime varchar(20),
-opis text,
-odgajateljica varchar(20)
+opis text
 );
 
 alter table odgojna_skupina add foreign key (odgajateljica) references odgajateljica(sifra);
