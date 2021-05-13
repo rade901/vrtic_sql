@@ -16,31 +16,31 @@ datum_pocetka date
 
 create table odgajateljica(
 sifra int not null primary key auto_increment,
-ime varchar(20),
-prezime varchar(20),
-strucna_sprema varchar(50)
+ime varchar(20) not null,
+prezime varchar(20)not null,
+strucna_sprema varchar(50)not null
 );
 
 create table skupina_1(
 sifra int not null primary key auto_increment,
-ime varchar(20),
-prezime varchar(20),
+ime varchar(20)not null,
+prezime varchar(20)not null,
 opis text,
-broj_telefona_roditelja varchar(20)
+broj_telefona_roditelja varchar(20)not null
 );
 create table skupina_2(
 sifra int not null primary key auto_increment,
-ime varchar(20),
-prezime varchar(20),
+ime varchar(20) not null,
+prezime varchar(20) not null,
 opis text,
-broj_telefona_roditelja varchar(20)
+broj_telefona_roditelja varchar(20)not null
 );
 create table skupina_3(
 sifra int not null primary key auto_increment,
-ime varchar(20),
-prezime varchar(20),
+ime varchar(20)not null,
+prezime varchar(20)not null,
 opis text,
-broj_telefona_roditelja varchar(20)
+broj_telefona_roditelja varchar(20)not null
 );
 
 alter table odgojna_skupina add foreign key (odgajateljica) references odgajateljica(sifra);
