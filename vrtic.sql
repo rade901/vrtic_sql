@@ -51,4 +51,5 @@ alter table odgojna_skupina add foreign key (skupina_2) references skupina_2(sif
 
 alter table odgojna_skupina add foreign key (skupina_3) references skupina_3(sifra);
 
+insert into odgajateljica (sifra,ime,prezime,strucna_sprema) values (null,'nikolina','cebic','vss');
 
