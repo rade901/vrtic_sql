@@ -58,3 +58,7 @@ insert into skupina_2 (sifra,ime,prezime,opis) values (null,'matej','peric','dje
 
 insert into skupina_2 (sifra,ime,prezime,opis) values (null,'oliver','lukic','djete mora piti ljek');
 
+insert into skupina_3 (sifra,ime,prezime,opis) values (null,'tomislav','peric','djete treba vise sna');
+
+insert into skupina_3 (sifra,ime,prezime,opis) values (null,'kruno','lukic','djete mora piti ljek');
+
