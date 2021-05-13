@@ -62,3 +62,9 @@ insert into skupina_3 (sifra,ime,prezime,opis) values (null,'tomislav','peric','
 
 insert into skupina_3 (sifra,ime,prezime,opis) values (null,'kruno','lukic','djete mora piti ljek');
 
+
+insert into odgojna_skupina (sifra,skupina_1,skupina_2,skupina_3,odgajateljica,datum_pocetka) values (null,1,1,1,1,'2008-11-11');
+
+insert into odgojna_skupina (sifra,skupina_1,skupina_2,skupina_3,odgajateljica,datum_pocetka) values (null,2,2,2,1,'2008-11-11');
+
+
